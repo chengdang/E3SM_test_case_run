@@ -1,0 +1,264 @@
+(rof_init_mct) :MOSART model initialization
+  mosart npes =           56
+  mosart iam  =            0
+  inst_name = ROF
+ Read in mosart_inparm namelist from: mosart_in
+ define run:
+    run type              = initial
+    coupling_period       =        10800
+    delt_mosart           =         3600
+    decomp option         = roundrobin
+    smat option           = Xonly
+    wrmflag               =  F
+    MOSART initial data   = 
+ 20171228.beta3rc13_1850.ne30_oECv3_ICG.edison.mosart.r.0331-01-01-00000.nc
+    MOSART river data       = 
+ /project/projectdirs/acme/inputdata/rof/mosart/MOSART_Global_half_20161014c.nc
+ (GETFIL): attempting to find local file 
+ 20171228.beta3rc13_1850.ne30_oECv3_ICG.edison.mosart.r.0331-01-01-00000.nc
+ (GETFIL): using 
+ 20171228.beta3rc13_1850.ne30_oECv3_ICG.edison.mosart.r.0331-01-01-00000.nc
+  in current working directory
+  ******** RTM Time Manager Configuration ********
+   Calendar type:            NO_LEAP
+   Timestep size (seconds):         10800
+   Start date (yr mon day tod):                1           1           1
+           0
+   Stop date (yr mon day tod):                 1           1           6
+           0
+   Reference date (yr mon day tod):            1           1           1
+           0
+   Current step number:                 0
+   Current date (yr mon day tod):              1           1           1
+           0
+  ************************************************
+ MOSART tracers =            2 LIQ:ICE
+ (GETFIL): attempting to find local file MOSART_Global_half_20161014c.nc
+ (GETFIL): using 
+ /project/projectdirs/acme/inputdata/rof/mosart/MOSART_Global_half_20161014c.nc
+ Read in MOSART file name: 
+ /project/projectdirs/acme/inputdata/rof/mosart/MOSART_Global_half_20161014c.nc
+ Opened existing file 
+ /project/projectdirs/acme/inputdata/rof/mosart/MOSART_Global_half_20161014c.nc
+      327680
+ Values for rtmlon/rtmlat:          720         360
+ Successfully read MOSART dimensions
+ Read longxy   -179.750000000000        179.750000000000     
+ rlonc   -179.750000000000        179.750000000000     
+ Read latixy   -89.7500000000000        89.7500000000000     
+ rlatc   -89.7500000000000        89.7500000000000     
+ Read area    13488255.1684929        3091252162.16117     
+ area    13488255.1684929        3091252162.16117     
+ Read ID            1      259200
+ ID            1      259200
+ Read dnID        -9999      249427
+ dnID        -9999      249427
+ Number of outlet basins =         4575
+ Number of total  basins =       203207
+ Number of mosart points =        60568
+ Number of runoff points =       259200
+ MOSART cells and basins total  =       259200      203207
+ MOSART cells per basin avg/max =            1        1972
+ MOSART cells per pe    min/max =         4628        4629
+ MOSART basins per pe   min/max =            0           0
+ total runoff cells numr  =       259200
+MOSART decomp info proc =         0 begr =         1 endr =      4629 numr =      4629
+ (Rtmini)   earth area    510099699070762.     
+ (Rtmini)  MOSART area    510099700943504.     
+ (Rtmini) MOSART initialize avect tr001:tr002
+ (Rtmini)  Done initializing SmatP_dnstrm, nElements =        55993
+ (Rtmini) MOSART initialize avect tr001:tr002
+ (Rtmini)  Done initializing SmatP_direct, nElements =       259200
+ Opened existing file 
+ /project/projectdirs/acme/inputdata/rof/mosart/MOSART_Global_half_20161014c.nc
+      327680
+(MOSART_init) read frac   -9999.000       1.000000    
+(MOSART_init) read fdir mask      -9999       128
+(MOSART_init) read ID0          1    259169
+(MOSART_init) read dnID      -9999    247970
+(MOSART_init) read area   0.1348826E+08  0.3091252E+10
+(MOSART_init) read areaTotal   -9999.000      0.3706616E+13
+(MOSART_init) read nh   -9999.000      0.4000000    
+(MOSART_init) read hslp   -9999.000      0.3419000    
+(MOSART_init) read gxr   -9999.000      0.5100000E-02
+(MOSART_init) read tslp   -9999.000      0.4540000E-01
+(MOSART_init) read twidth   -9999.000       344.4775    
+(MOSART_init) read nt   -9999.000      0.5000000E-01
+(MOSART_init) read rlen   -9999.000       240000.0    
+(MOSART_init) read rslp   -9999.000      0.4540000E-01
+(MOSART_init) read rwidth   -9999.000       3752.378    
+(MOSART_init) read rwidth0   -9999.000       18761.89    
+(MOSART_init) read rdepth   -9999.000       1000.000    
+(MOSART_init) read nr   -9999.000      0.5000000E-01
+ (MOSART_init) MOSART initialize avect tr001:tr002
+ (MOSART_init) Done initializing SmatP_eroutUp, nElements =        55993
+ (MOSART_init) areatot calc            1   632732354687556.     
+ (MOSART_init) areatot calc            2   740823169883255.     
+ (MOSART_init) areatot calc            3   839189079190089.     
+ (MOSART_init) areatot calc            4   930369303410775.     
+ (MOSART_init) areatot calc            5  1.015596729332416E+015
+ (MOSART_init) areatot calc            6  1.095898874375430E+015
+ (MOSART_init) areatot calc            7  1.172070839372256E+015
+ (MOSART_init) areatot calc            8  1.244500300417852E+015
+ (MOSART_init) areatot calc            9  1.313685358336343E+015
+ (MOSART_init) areatot calc           10  1.380046788465264E+015
+ (MOSART_init) areatot calc           11  1.443920582506558E+015
+ (MOSART_init) areatot calc           12  1.505472620229074E+015
+ (MOSART_init) areatot calc           13  1.564908261476764E+015
+ (MOSART_init) areatot calc           14  1.622309083820610E+015
+ (MOSART_init) areatot calc           15  1.677769022729874E+015
+ (MOSART_init) areatot calc           16  1.731368741296298E+015
+ (MOSART_init) areatot calc           17  1.783121623909312E+015
+ (MOSART_init) areatot calc           18  1.833128765784754E+015
+ (MOSART_init) areatot calc           19  1.881434028591754E+015
+ (MOSART_init) areatot calc           20  1.928028129519914E+015
+ (MOSART_init) areatot calc           21  1.972971063644742E+015
+ (MOSART_init) areatot calc           22  2.016286597789919E+015
+ (MOSART_init) areatot calc           23  2.057950588284218E+015
+ (MOSART_init) areatot calc           24  2.098026381726736E+015
+ (MOSART_init) areatot calc           25  2.136562437727452E+015
+ (MOSART_init) areatot calc           26  2.173486034127232E+015
+ (MOSART_init) areatot calc           27  2.208855957248100E+015
+ (MOSART_init) areatot calc           28  2.242720366491516E+015
+ (MOSART_init) areatot calc           29  2.275249606831794E+015
+ (MOSART_init) areatot calc           30  2.306465052556667E+015
+ (MOSART_init) areatot calc           31  2.336435617233890E+015
+ (MOSART_init) areatot calc           32  2.365280666647700E+015
+ (MOSART_init) areatot calc           33  2.393028837443602E+015
+ (MOSART_init) areatot calc           34  2.419733738622432E+015
+ (MOSART_init) areatot calc           35  2.445449065212256E+015
+ (MOSART_init) areatot calc           36  2.470106791104840E+015
+ (MOSART_init) areatot calc           37  2.493737924184020E+015
+ (MOSART_init) areatot calc           38  2.516353643266371E+015
+ (MOSART_init) areatot calc           39  2.538002221205650E+015
+ (MOSART_init) areatot calc           40  2.558653052678467E+015
+ (MOSART_init) areatot calc           41  2.578370937941217E+015
+ (MOSART_init) areatot calc           42  2.597219444859576E+015
+ (MOSART_init) areatot calc           43  2.615222799961708E+015
+ (MOSART_init) areatot calc           44  2.632413347425624E+015
+ (MOSART_init) areatot calc           45  2.648843502052530E+015
+ (MOSART_init) areatot calc           46  2.664537582721693E+015
+ (MOSART_init) areatot calc           47  2.679489626530656E+015
+ (MOSART_init) areatot calc           48  2.693694753571698E+015
+ (MOSART_init) areatot calc           49  2.707154906520946E+015
+ (MOSART_init) areatot calc           50  2.719897252448165E+015
+ (MOSART_init) areatot calc           51  2.732011025657732E+015
+ (MOSART_init) areatot calc           52  2.743510227234627E+015
+ (MOSART_init) areatot calc           53  2.754421070060872E+015
+ (MOSART_init) areatot calc           54  2.764767117518041E+015
+ (MOSART_init) areatot calc           55  2.774573375691147E+015
+ (MOSART_init) areatot calc           56  2.783865098048706E+015
+ (MOSART_init) areatot calc           57  2.792649353600698E+015
+ (MOSART_init) areatot calc           58  2.800978403767554E+015
+ (MOSART_init) areatot calc           59  2.808919243058650E+015
+ (MOSART_init) areatot calc           60  2.816487431472365E+015
+ (MOSART_init) areatot calc           61  2.823664774003462E+015
+ (MOSART_init) areatot calc           62  2.830476044911704E+015
+ (MOSART_init) areatot calc           63  2.836894070946800E+015
+ (MOSART_init) areatot calc           64  2.842892525406704E+015
+ (MOSART_init) areatot calc           65  2.848492409230224E+015
+ (MOSART_init) areatot calc           66  2.853700296790360E+015
+ (MOSART_init) areatot calc           67  2.858563431470187E+015
+ (MOSART_init) areatot calc           68  2.863059179634795E+015
+ (MOSART_init) areatot calc           69  2.867202287193060E+015
+ (MOSART_init) areatot calc           70  2.871018328269535E+015
+ (MOSART_init) areatot calc           71  2.874506788758487E+015
+ (MOSART_init) areatot calc           72  2.877690966542456E+015
+ (MOSART_init) areatot calc           73  2.880584109106053E+015
+ (MOSART_init) areatot calc           74  2.883247393975481E+015
+ (MOSART_init) areatot calc           75  2.885679150385875E+015
+ (MOSART_init) areatot calc           76  2.887893145332923E+015
+ (MOSART_init) areatot calc           77  2.889909263149020E+015
+ (MOSART_init) areatot calc           78  2.891723556777260E+015
+ (MOSART_init) areatot calc           79  2.893378009331805E+015
+ (MOSART_init) areatot calc           80  2.894905159085010E+015
+ (MOSART_init) areatot calc           81  2.896283320819634E+015
+ (MOSART_init) areatot calc           82  2.897511570776891E+015
+ (MOSART_init) areatot calc           83  2.898584866085240E+015
+ (MOSART_init) areatot calc           84  2.899522677245118E+015
+ (MOSART_init) areatot calc           85  2.900350818563983E+015
+ (MOSART_init) areatot calc           86  2.901085629974404E+015
+ (MOSART_init) areatot calc           87  2.901721351507990E+015
+ (MOSART_init) areatot calc           88  2.902255523238149E+015
+ (MOSART_init) areatot calc           89  2.902681057900068E+015
+ (MOSART_init) areatot calc           90  2.903022166854709E+015
+ (MOSART_init) areatot calc           91  2.903280424506056E+015
+ (MOSART_init) areatot calc           92  2.903460093270950E+015
+ (MOSART_init) areatot calc           93  2.903591797063900E+015
+ (MOSART_init) areatot calc           94  2.903698504599301E+015
+ (MOSART_init) areatot calc           95  2.903782025921114E+015
+ (MOSART_init) areatot calc           96  2.903844829283532E+015
+ (MOSART_init) areatot calc           97  2.903886436436931E+015
+ (MOSART_init) areatot calc           98  2.903916358190604E+015
+ (MOSART_init) areatot calc           99  2.903940500792509E+015
+ (MOSART_init) areatot calc          100  2.903956973061069E+015
+ (MOSART_init) areatot calc          101  2.903967896700963E+015
+ (MOSART_init) areatot calc          102  2.903971530685864E+015
+ (MOSART_init) areatot calc          103  2.903971530685864E+015
+ (MOSART_init) DLevelH2R =            5
+ (MOSART_init) numDT_r   =            1          20
+ (MOSART_init) numDT_r max  =           23
+ (MOSART_init) numDT_t   =            1           5
+ (MOSART_init) numDT_t max  =            9
+ Reading restart dataset
+ Opened existing file 
+ 20171228.beta3rc13_1850.ne30_oECv3_ICG.edison.mosart.r.0331-01-01-00000.nc
+      327680
+------------------------------------------------------------
+ Successfully read restart data for restart run
+ 
+ RTM_hist_printflds : number of master fields =           22
+  ******* MASTER FIELD LIST *******
+    1 RIVER_DISCHARGE_OVER_LAND_LIQ    m3/s            
+    2 RIVER_DISCHARGE_OVER_LAND_ICE    m3/s            
+    3 RIVER_DISCHARGE_TO_OCEAN_LIQ     m3/s            
+    4 RIVER_DISCHARGE_TO_OCEAN_ICE     m3/s            
+    5 TOTAL_DISCHARGE_TO_OCEAN_LIQ     m3/s            
+    6 TOTAL_DISCHARGE_TO_OCEAN_ICE     m3/s            
+    7 DIRECT_DISCHARGE_TO_OCEAN_LIQ    m3/s            
+    8 DIRECT_DISCHARGE_TO_OCEAN_ICE    m3/s            
+    9 STORAGE_LIQ                      m3              
+   10 STORAGE_ICE                      m3              
+   11 DVOLRDT_LND_LIQ                  m3/s            
+   12 DVOLRDT_LND_ICE                  m3/s            
+   13 DVOLRDT_OCN_LIQ                  m3/s            
+   14 DVOLRDT_OCN_ICE                  m3/s            
+   15 QSUR_LIQ                         m3/s            
+   16 QSUR_ICE                         m3/s            
+   17 QSUB_LIQ                         m3/s            
+   18 QSUB_ICE                         m3/s            
+   19 QGWL_LIQ                         m3/s            
+   20 QGWL_ICE                         m3/s            
+   21 QDTO_LIQ                         m3/s            
+   22 QDTO_ICE                         m3/s            
+ hist_htapes_build Initializing RTM history files
+------------------------------------------------------------
+ htapes_fieldlist : Included fields tape            1 =          18
+           1  DIRECT_DISCHARGE_TO_OCEAN_ICE    A
+           2  DIRECT_DISCHARGE_TO_OCEAN_LIQ    A
+           3  QDTO_ICE                         A
+           4  QDTO_LIQ                         A
+           5  QGWL_ICE                         A
+           6  QGWL_LIQ                         A
+           7  QSUB_ICE                         A
+           8  QSUB_LIQ                         A
+           9  QSUR_ICE                         A
+          10  QSUR_LIQ                         A
+          11  RIVER_DISCHARGE_OVER_LAND_ICE    A
+          12  RIVER_DISCHARGE_OVER_LAND_LIQ    A
+          13  RIVER_DISCHARGE_TO_OCEAN_ICE     A
+          14  RIVER_DISCHARGE_TO_OCEAN_LIQ     A
+          15  STORAGE_ICE                      A
+          16  STORAGE_LIQ                      A
+          17  TOTAL_DISCHARGE_TO_OCEAN_ICE     A
+          18  TOTAL_DISCHARGE_TO_OCEAN_LIQ     A
+ There will be a total of            1 RTM  history tapes
+ 
+ RTM History tape            1  write frequency is MONTHLY
+ Number of time samples on RTM history tape            1  is            1
+ Output precision on RTM history tape            1 =           2
+ 
+ hist_htapes_build Successfully initialized RTM history files
+------------------------------------------------------------
+ (Rtmini)  done
+ Snow capping will flow out in frozen river runoff

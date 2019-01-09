@@ -1,0 +1,1044 @@
+=== Beginning ice_init_mct: rank=     0
+----------------------------------------------------------------------
+Beginning MPAS-seaice Output Log File for task       0 of     640
+    Opened at 2019/01/09 12:29:26
+----------------------------------------------------------------------
+
+ Reading namelist from file mpassi_in
+  It is associated (decompList that is)
+ Reading streams configuration from file streams.seaice
+ Found mesh stream with filename template /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/mpascice.rst.0331-01-01_00000.nc
+ Using io_type Serial NetCDF for mesh stream
+  ** Attempting to bootstrap MPAS framework using stream: restart_ic
+ Bootstrapping framework with mesh fields from input file '/global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/mpascice.rst.0331-01-01_00000.nc'
+  * Requested field snowScatteringAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field snowBodyAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field iceScatteringAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field iceBodyAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field stress11weak is deactivated due to packages, or is a scratch variable.
+  * Requested field stress22weak is deactivated due to packages, or is a scratch variable.
+  * Requested field stress12weak is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalAlgaeConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDOCConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDICConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDONConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalNitrateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalSilicateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalAmmoniumConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSPpConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSPdConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalNonreactiveConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalHumicsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalParticulateIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDissolvedIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAlgaeConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDOCConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDICConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDONConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalNitrateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalSilicateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAmmoniumConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSPpConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSPdConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalNonreactiveConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalHumicsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalParticulateIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDissolvedIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAerosolsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalSalinity is deactivated due to packages, or is a scratch variable.
+  * Requested field brineFraction is deactivated due to packages, or is a scratch variable.
+  * Requested field mobileFraction is deactivated due to packages, or is a scratch variable.
+  * Requested field maximumIcePresence is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayRegression is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayParallelism is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayRestartability is deactivated due to packages, or is a scratch variable.
+  * Requested field forcingGroupNames is deactivated due to packages, or is a scratch variable.
+  * Requested field forcingGroupRestartTimes is deactivated due to packages, or is a scratch variable.
+  * Requested field snowScatteringAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field snowBodyAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field iceScatteringAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field iceBodyAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field stress11weak is deactivated due to packages, or is a scratch variable.
+  * Requested field stress22weak is deactivated due to packages, or is a scratch variable.
+  * Requested field stress12weak is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalAlgaeConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDOCConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDICConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDONConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalNitrateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalSilicateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalAmmoniumConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSPpConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSPdConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalNonreactiveConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalHumicsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalParticulateIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDissolvedIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAlgaeConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDOCConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDICConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDONConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalNitrateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalSilicateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAmmoniumConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSPpConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSPdConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalNonreactiveConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalHumicsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalParticulateIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDissolvedIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAerosolsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalSalinity is deactivated due to packages, or is a scratch variable.
+  * Requested field brineFraction is deactivated due to packages, or is a scratch variable.
+  * Requested field mobileFraction is deactivated due to packages, or is a scratch variable.
+  * Requested field maximumIcePresence is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayRegression is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayParallelism is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayRestartability is deactivated due to packages, or is a scratch variable.
+  * Requested field forcingGroupNames is deactivated due to packages, or is a scratch variable.
+  * Requested field forcingGroupRestartTimes is deactivated due to packages, or is a scratch variable.
+  * Requested field snowScatteringAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field snowBodyAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field iceScatteringAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field iceBodyAerosol is deactivated due to packages, or is a scratch variable.
+  * Requested field stress11weak is deactivated due to packages, or is a scratch variable.
+  * Requested field stress22weak is deactivated due to packages, or is a scratch variable.
+  * Requested field stress12weak is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalAlgaeConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDOCConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDICConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDONConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalNitrateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalSilicateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalAmmoniumConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSPpConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDMSPdConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalNonreactiveConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalHumicsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalParticulateIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field skeletalDissolvedIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAlgaeConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDOCConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDICConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDONConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalNitrateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalSilicateConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAmmoniumConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSPpConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDMSPdConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalNonreactiveConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalHumicsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalParticulateIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalDissolvedIronConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalAerosolsConc is deactivated due to packages, or is a scratch variable.
+  * Requested field verticalSalinity is deactivated due to packages, or is a scratch variable.
+  * Requested field brineFraction is deactivated due to packages, or is a scratch variable.
+  * Requested field mobileFraction is deactivated due to packages, or is a scratch variable.
+  * Requested field maximumIcePresence is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayRegression is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayParallelism is deactivated due to packages, or is a scratch variable.
+  * Requested field testArrayRestartability is deactivated due to packages, or is a scratch variable.
+  * Requested field forcingGroupNames is deactivated due to packages, or is a scratch variable.
+  * Requested field forcingGroupRestartTimes is deactivated due to packages, or is a scratch variable.
+  * Requested field performConservationPrecompute is deactivated due to packages, or is a scratch variable.
+  * Requested field initialEnergy is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedSurfaceHeatFlux is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedOceanHeatFlux is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedFreezingPotential is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedSnowfallHeat is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedLatentHeat is deactivated due to packages, or is a scratch variable.
+  * Requested field initialMass is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedRainfallRate is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedSnowfallRate is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedEvaporation is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedFreshWater is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedFrazilWater is deactivated due to packages, or is a scratch variable.
+  * Requested field initialSalt is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedOceanSaltFlux is deactivated due to packages, or is a scratch variable.
+  * Requested field accumulatedFrazilSaltFlux is deactivated due to packages, or is a scratch variable.
+ 
+Parsing run-time I/O configuration from streams.seaice ...
+ 
+ -----  found immutable stream "mesh" in streams.seaice  -----
+         filename template:  mesh_variables.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          none
+         reference time:     initial_time
+         record interval:    -
+ 
+ -----  found immutable stream "input" in streams.seaice  -----
+         filename template:  /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/mpascice.rst.0331-01-01_00000.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        initial_only
+ 
+ -----  found immutable stream "restart" in streams.seaice  -----
+         filename template:  mpascice.rst.$Y-$M-$D_$S.nc
+         filename interval:  00-00-00_00:00:01
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          input, output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         input alarm:        initial_only
+         output alarm:       00-00-00_00:00:01
+ 
+ -----  found immutable stream "restart_ic" in streams.seaice  -----
+         filename template:  /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/mpascice.rst.0331-01-01_00000.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        initial_only
+ 
+ -----  found immutable stream "LYqSixHourlyForcing" in streams.seaice  -----
+         filename template:  forcing/atmosphere_forcing_six_hourly.$Y.nc
+         filename interval:  0001-00-00_00:00:00
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     2000-01-01_03:00:00
+         record interval:    -
+         input alarm:        none
+ 
+ -----  found immutable stream "LYqMonthlyForcing" in streams.seaice  -----
+         filename template:  forcing/atmosphere_forcing_monthly.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        none
+ 
+ -----  found immutable stream "NCARMonthlySSTForcing" in streams.seaice  -----
+         filename template:  forcing/ocean_forcing_monthly.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        none
+ 
+ -----  found immutable stream "NCARMonthlyForcing" in streams.seaice  -----
+         filename template:  forcing/ocean_forcing_monthly.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        none
+ 
+ -----  found immutable stream "StandardAerosolsInput" in streams.seaice  -----
+         filename template:  standard_optics_mpas_cice.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        none
+ 
+ -----  found immutable stream "ModalAerosolsInput" in streams.seaice  -----
+         filename template:  snicar_optics_5bnd_mam_c140303_mpas_cice.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        none
+ 
+ -----  found immutable stream "SnicarInput" in streams.seaice  -----
+         filename template:  /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/snicar_optics_5bnd_snow_and_aerosols.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        none
+ 
+ -----  found immutable stream "abort_contents" in streams.seaice  -----
+         filename template:  abort_variables.nc
+         filename interval:  none
+         direction:          none
+         reference time:     initial_time
+         record interval:    -
+ 
+ -----  found stream "output" in streams.seaice  -----
+         filename template:  mpascice.hist.$Y-$M-$D_$S.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       00-01-00_00:00:00
+ 
+ -----  found stream "abort_block" in streams.seaice  -----
+         filename template:  abort_seaice_$Y-$M-$D_$h.$m.$s_block_$B.nc
+         filename interval:  none
+         clobber mode:       truncate
+         direction:          output
+         reference time:     initial_time
+         record interval:    -
+         output alarm:       none
+ 
+ -----  found stream "abort" in streams.seaice  -----
+         filename template:  abort_seaice_$Y-$M-$D_$h.$m.$s.nc
+         filename interval:  none
+         clobber mode:       truncate
+         direction:          output
+         reference time:     initial_time
+         record interval:    -
+         output alarm:       none
+ 
+ -----  found stream "highFrequencyOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.highFrequencyOutput.$Y-$M-$D.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       none
+         package:            highFrequencyOutputAMPKG
+  * Requested field iceAreaCellCategory1 is deactivated due to packages, or is a scratch variable.
+ 
+ -----  found stream "regionalStatisticsOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.regionalStatistics.$Y.$M.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       00-00-01_00:00:00
+         package:            regionalStatisticsAMPKG
+ 
+ -----  found stream "conservationCheckOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.conservationCheck.$Y.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       00-01-00_00:00:00
+         package:            conservationCheckAMPKG
+  * Requested field initialEnergy is deactivated due to packages, or is a scratch variable.
+  * Requested field finalEnergy is deactivated due to packages, or is a scratch variable.
+  * Requested field energyChange is deactivated due to packages, or is a scratch variable.
+  * Requested field netEnergyFlux is deactivated due to packages, or is a scratch variable.
+  * Requested field absoluteEnergyError is deactivated due to packages, or is a scratch variable.
+  * Requested field relativeEnergyError is deactivated due to packages, or is a scratch variable.
+  * Requested field initialMass is deactivated due to packages, or is a scratch variable.
+  * Requested field finalMass is deactivated due to packages, or is a scratch variable.
+  * Requested field massChange is deactivated due to packages, or is a scratch variable.
+  * Requested field netMassFlux is deactivated due to packages, or is a scratch variable.
+  * Requested field absoluteMassError is deactivated due to packages, or is a scratch variable.
+  * Requested field relativeMassError is deactivated due to packages, or is a scratch variable.
+  * Requested field initialSalt is deactivated due to packages, or is a scratch variable.
+  * Requested field finalSalt is deactivated due to packages, or is a scratch variable.
+  * Requested field saltChange is deactivated due to packages, or is a scratch variable.
+  * Requested field netSaltFlux is deactivated due to packages, or is a scratch variable.
+  * Requested field absoluteSaltError is deactivated due to packages, or is a scratch variable.
+  * Requested field relativeSaltError is deactivated due to packages, or is a scratch variable.
+ 
+ -----  found stream "conservationCheckRestart" in streams.seaice  -----
+         filename template:  mpascice.rst.am.conservationCheck.$Y-$M-$D_$S.nc
+         filename interval:  00-00-00_00:00:01
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          input, output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         input alarm:        initial_only
+         output alarm:       stream:restart:output_interval (00-00-00_00:00:01)
+         package:            conservationCheckAMPKG
+ 
+ -----  found stream "loadBalanceOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.cice_loadBalance.$Y.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       00-00-00_01:00:00
+         package:            loadBalanceAMPKG
+  * Requested field nCellsProcWithSeaIce is deactivated due to packages, or is a scratch variable.
+  * Requested field nCellsProc is deactivated due to packages, or is a scratch variable.
+ 
+ -----  found stream "maximumIcePresenceOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.cice_maximumIcePresence.$Y.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       01-00-00_00:00:00
+         package:            maximumIcePresenceAMPKG
+  * Requested field maximumIcePresence is deactivated due to packages, or is a scratch variable.
+ 
+ -----  found stream "timeSeriesStatsDailyOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.timeSeriesStatsDaily.$Y-$M-$D.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       00-00-01_00:00:00
+         package:            timeSeriesStatsDailyAMPKG
+ 
+ -----  found stream "timeSeriesStatsDailyRestart" in streams.seaice  -----
+         filename template:  mpascice.rst.am.timeSeriesStatsDaily.$Y-$M-$D_$S.nc
+         filename interval:  none
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          input, output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         input alarm:        none
+         output alarm:       none
+         package:            timeSeriesStatsDailyAMPKG
+ 
+ -----  found stream "timeSeriesStatsMonthlyOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.timeSeriesStatsMonthly.$Y-$M-$D.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       00-01-00_00:00:00
+         package:            timeSeriesStatsMonthlyAMPKG
+ 
+ -----  found stream "timeSeriesStatsMonthlyRestart" in streams.seaice  -----
+         filename template:  mpascice.rst.am.timeSeriesStatsMonthly.$Y-$M-$D_$S.nc
+         filename interval:  none
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          input, output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         input alarm:        none
+         output alarm:       none
+         package:            timeSeriesStatsMonthlyAMPKG
+ 
+ -----  found stream "timeSeriesStatsClimatologyOutput" in streams.seaice  -----
+         filename template:  mpascice.hist.am.timeSeriesStatsClimatology.$Y.nc
+         filename interval:  00-01-00_00:00:00
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         output alarm:       10-00-00_00:00:00
+         package:            timeSeriesStatsClimatologyAMPKG
+ 
+ -----  found stream "timeSeriesStatsClimatologyRestart" in streams.seaice  -----
+         filename template:  mpascice.rst.am.timeSeriesStatsClimatology.$Y-$M-$D_$S.nc
+         filename interval:  00-00-00_00:00:01
+         clobber mode:       truncate
+         I/O type:           Serial NetCDF
+         direction:          input, output
+         reference time:     01-01-01_00:00:00
+         record interval:    -
+         input alarm:        initial_only
+         output alarm:       stream:restart:output_interval (00-00-00_00:00:01)
+         package:            timeSeriesStatsClimatologyAMPKG
+ 
+ -----  found stream "landIceMasks" in streams.seaice  -----
+         filename template:  /project/projectdirs/acme/inputdata/ice/mpas-cice/oEC60to30v3/seaice.EC60to30v3.restartFrom_anvil0926.171101.nc
+         filename interval:  none
+         I/O type:           Serial NetCDF
+         direction:          input
+         reference time:     initial_time
+         record interval:    -
+         input alarm:        initial_only
+ 
+ ----- done parsing run-time I/O from streams.seaice -----
+
+ 
+ 
+ Reading dimensions from input streams ...
+ 
+ ----- reading dimensions from stream 'input' using file /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/mpascice.rst.0331-01-01_00000.nc
+        nCells = 235160
+        nEdges = 714274
+        nVertices = 478835
+        TWO = 2
+        maxEdges = 7
+        maxEdges2 = 14
+        vertexDegree = 3
+ 
+   *** unable to open input file regions.nc for stream 'regions'
+ 
+   *** unable to open input file mpascice.rst.0001-01-01_00000.nc for stream 'restart'
+ 
+ ----- reading dimensions from stream 'restart_ic' using file /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/mpascice.rst.0331-01-01_00000.nc
+        nCells = 235160
+        nEdges = 714274
+        nVertices = 478835
+        TWO = 2
+        maxEdges = 7
+        maxEdges2 = 14
+        vertexDegree = 3
+        ONE = 1
+        nCategories = 5
+        nIceLayers = 7
+        nSnowLayers = 1
+ 
+   *** unable to open input file forcing/atmosphere_forcing_six_hourly.0000.nc for stream 'LYqSixHourlyForcing'
+ 
+   *** unable to open input file forcing/atmosphere_forcing_monthly.nc for stream 'LYqMonthlyForcing'
+ 
+   *** unable to open input file forcing/ocean_forcing_monthly.nc for stream 'NCARMonthlySSTForcing'
+ 
+   *** unable to open input file forcing/ocean_forcing_monthly.nc for stream 'NCARMonthlyForcing'
+ 
+   *** unable to open input file standard_optics_mpas_cice.nc for stream 'StandardAerosolsInput'
+ 
+   *** unable to open input file snicar_optics_5bnd_mam_c140303_mpas_cice.nc for stream 'ModalAerosolsInput'
+ 
+ ----- reading dimensions from stream 'SnicarInput' using file /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/snicar_optics_5bnd_snow_and_aerosols.nc
+        nSpectralIntervalsSNICAR = 5
+        nSnowGrainRadiusSNICAR = 1471
+        nModal1 = 10
+        nModal2 = 8
+        maxAerosolType = 6
+ 
+   *** unable to open input file points.nc for stream 'pointLocationsInput'
+ 
+   *** unable to open input file restarts/restart.AM.conservationCheck.0001-01-01_00.00.00.nc for stream 'conservationCheckRestart'
+ 
+   *** unable to open input file mpascice.rst.am.timeSeriesStatsDaily.0001-01-01_00000.nc for stream 'timeSeriesStatsDailyRestart'
+ 
+   *** unable to open input file mpascice.rst.am.timeSeriesStatsMonthly.0001-01-01_00000.nc for stream 'timeSeriesStatsMonthlyRestart'
+ 
+   *** unable to open input file mpascice.rst.am.timeSeriesStatsClimatology.0001-01-01_00000.nc for stream 'timeSeriesStatsClimatologyRestart'
+ 
+ ----- reading dimensions from stream 'landIceMasks' using file /project/projectdirs/acme/inputdata/ice/mpas-cice/oEC60to30v3/seaice.EC60to30v3.restartFrom_anvil0926.171101.nc
+        nCells = 235160
+ 
+ ----- done reading dimensions from input streams -----
+ 
+ 
+ Processing decomposed dimensions ...
+ 
+  ----- done processing decomposed dimensions -----
+ 
+ 
+ Assigning remaining dimensions from definitions in Registry.xml ...
+        R3 = 3
+        FIFTEEN = 15
+        TWENTYONE = 21
+        nHemispheres = 3
+        nQuadPoints = 6
+        nTriPerEdgeRemap = 6
+        maxCellsPerEdgeRemap = 6
+        maxEdgesPerEdgeRemap = 6
+        maxVerticesPerEdgeRemap = 8
+        nIceLayersP1 = 8
+        nCategoriesP1 = 6
+        nAerosols = 0
+        nSpectralIntervals = 3
+        nBioLayers = 7
+        nBioLayersP1 = 8
+        nBioLayersP2 = 9
+        nBioLayersP3 = 10
+        maxAlgaeType = 3
+        maxDOCType = 3
+        maxDICType = 1
+        maxDONType = 1
+        maxIronType = 2
+        maxBCType = 2
+        maxDustType = 4
+        nAlgae = 3
+        nDOC = 2
+        nDIC = 1
+        nDON = 1
+        nParticulateIron = 1
+        nDissolvedIron = 1
+        nzAerosols = 3
+        nShortwaveBio = 40
+        nAlgaeLayers = 30
+        nAlgaeIceLayers = 24
+        nAlgaeSnowLayers = 6
+        nDOCLayers = 20
+        nDOCIceLayers = 16
+        nDOCSnowLayers = 4
+        nDICLayers = 10
+        nDICIceLayers = 8
+        nDICSnowLayers = 2
+        nDONLayers = 10
+        nDONIceLayers = 8
+        nDONSnowLayers = 2
+        nParticulateIronLayers = 10
+        nPartIronIceLayers = 8
+        nPartIronSnowLayers = 2
+        nDissolvedIronLayers = 10
+        nDisIronIceLayers = 8
+        nDisIronSnowLayers = 2
+        nzAerosolsLayers = 30
+        nzAerosolsSnowLayers = 6
+        nzAerosolsIceLayers = 24
+        nZBGCTracers = 29
+        nRegions = 3
+        nPoints = 1
+        nPointGroups = 1
+        maxPointsInGroup = 1
+        nForcingGroupsMax = 5
+        nProcs = 32 (config_AM_loadBalance_nProcs)
+        nMonths = 13
+ 
+  ----- done assigning dimensions from Registry.xml -----
+ 
+ 
+ dayOfNextShortwaveCalculation = 1.00000000000000
+ 
+  *****************************************************************************
+  MPI Task 0 has access to 1 threads
+  *****************************************************************************
+ 
+ 
+  ----- namelist options used -----
+ 
+       config_dt = 1800.00000000000
+       config_calendar_type = 'gregorian_noleap'
+       config_start_time = '0001-01-01_00:00:00'
+       config_stop_time = 'none'
+       config_run_duration = '0001-00-00_00:00:00'
+       config_num_halos = 2
+       config_pio_num_iotasks = 0
+       config_pio_stride = 1
+       config_write_output_on_startup = .false.
+       config_test_case_diag = .false.
+       config_test_case_diag_type = 'none'
+       config_full_abort_write = .true.
+       config_block_decomp_file_prefix = '/project/projectdirs/acme/inputdata/ice/mpas-cice/oEC60to30v3/mpas-cice.graph.info.161222.part.'
+       config_number_of_blocks = 0
+       config_explicit_proc_decomp = .false.
+       config_proc_decomp_file_prefix = 'graph.info.part.'
+       config_use_halo_exch = .true.
+       config_aggregate_halo_exch = .true.
+       config_reuse_halo_exch = .false.
+       config_load_balance_timers = .false.
+       config_do_restart = .false.
+       config_restart_timestamp_name = 'rpointer.ice'
+       config_do_restart_hbrine = .false.
+       config_do_restart_zsalinity = .false.
+       config_do_restart_bgc = .false.
+       config_nCategories = 5
+       config_nIceLayers = 7
+       config_nSnowLayers = 1
+       config_initial_condition_type = 'restart'
+       config_initial_ice_area = 1.00000000000000
+       config_initial_ice_volume = 1.00000000000000
+       config_initial_snow_volume = 0.00000000000000
+       config_initial_latitude_north = 70.0000000000000
+       config_initial_latitude_south = -60.0000000000000
+       config_initial_velocity_type = 'uniform'
+       config_initial_uvelocity = 0.00000000000000
+       config_initial_vvelocity = 0.00000000000000
+       config_calculate_coriolis = .true.
+       config_use_velocity_solver = .true.
+       config_use_advection = .true.
+       config_use_forcing = .false.
+       config_use_column_package = .true.
+       config_atmospheric_forcing_type = 'CORE'
+       config_forcing_start_time = '2000-01-01_00:00:00'
+       config_forcing_cycle_start = '2000-01-01_00:00:00'
+       config_forcing_cycle_duration = '2-00-00_00:00:00'
+       config_forcing_precipitation_units = 'mm_per_sec'
+       config_forcing_sst_type = 'ncar'
+       config_update_ocean_fluxes = .true.
+       config_include_pond_freshwater_feedback = .false.
+       config_perform_unit_test = .false.
+       config_unit_test_type = ''
+       config_unit_test_subtype = ''
+       config_use_test_ice_shelf = .false.
+       config_testing_system_test = .false.
+       config_dynamics_subcycle_number = 1
+       config_rotate_cartesian_grid = .true.
+       config_include_metric_terms = .true.
+       config_elastic_subcycle_number = 120
+       config_stress_divergence_scheme = 'variational'
+       config_variational_basis = 'wachspress'
+       config_wachspress_integration_type = 'dunavant'
+       config_wachspress_integration_order = 8
+       config_revised_evp = .false.
+       config_use_air_stress = .true.
+       config_use_ocean_stress = .true.
+       config_use_surface_tilt = .true.
+       config_geostrophic_surface_tilt = .false.
+       config_advection_type = 'incremental_remap'
+       config_monotonic = .true.
+       config_conservation_check = .false.
+       config_monotonicity_check = .false.
+       config_recover_tracer_means_check = .false.
+       config_use_column_shortwave = .true.
+       config_use_column_vertical_thermodynamics = .true.
+       config_use_column_biogeochemistry = .false.
+       config_use_column_itd_thermodynamics = .true.
+       config_use_column_ridging = .true.
+       config_use_ice_age = .true.
+       config_use_first_year_ice = .true.
+       config_use_level_ice = .true.
+       config_use_cesm_meltponds = .false.
+       config_use_level_meltponds = .true.
+       config_use_topo_meltponds = .false.
+       config_use_aerosols = .false.
+       config_use_brine = .false.
+       config_use_vertical_zsalinity = .false.
+       config_use_vertical_biochemistry = .false.
+       config_use_shortwave_bioabsorption = .false.
+       config_use_vertical_tracers = .false.
+       config_use_skeletal_biochemistry = .false.
+       config_use_nitrate = .false.
+       config_use_carbon = .false.
+       config_use_chlorophyll = .false.
+       config_use_ammonium = .false.
+       config_use_silicate = .false.
+       config_use_DMS = .false.
+       config_use_nonreactive = .false.
+       config_use_humics = .false.
+       config_use_DON = .false.
+       config_use_iron = .false.
+       config_use_modal_aerosols = .false.
+       config_use_zaerosols = .false.
+       config_skeletal_bgc_flux_type = 'Jin2006'
+       config_scale_initial_vertical_bgc = .false.
+       config_biogrid_bottom_molecular_sublayer = 0.600000000000000E-02
+       config_biogrid_top_molecular_sublayer = 0.600000000000000E-02
+       config_bio_gravity_drainage_length_scale = 0.240000000000000E-01
+       config_zsalinity_molecular_sublayer = 0.00000000000000
+       config_zsalinity_gravity_drainage_scale = 0.280000000000000E-01
+       config_snow_porosity_at_ice_surface = -0.300000000000000
+       config_new_ice_fraction_biotracer = 0.800000000000000
+       config_fraction_biotracer_in_frazil = 0.800000000000000
+       config_ratio_Si_to_N_diatoms = 1.80000000000000
+       config_ratio_Si_to_N_small_plankton = 0.00000000000000
+       config_ratio_Si_to_N_phaeocystis = 0.00000000000000
+       config_ratio_S_to_N_diatoms = 0.300000000000000E-01
+       config_ratio_S_to_N_small_plankton = 0.300000000000000E-01
+       config_ratio_S_to_N_phaeocystis = 0.300000000000000E-01
+       config_ratio_Fe_to_C_diatoms = 0.330000000000000E-02
+       config_ratio_Fe_to_C_small_plankton = 0.330000000000000E-02
+       config_ratio_Fe_to_C_phaeocystis = 0.100000000000000
+       config_ratio_Fe_to_N_diatoms = 0.230000000000000E-01
+       config_ratio_Fe_to_N_small_plankton = 0.230000000000000E-01
+       config_ratio_Fe_to_N_phaeocystis = 0.700000000000000
+       config_ratio_Fe_to_DON = 0.230000000000000E-01
+       config_ratio_Fe_to_DOC_saccharids = 0.100000000000000
+       config_ratio_Fe_to_DOC_lipids = 0.330000000000000E-01
+       config_respiration_fraction_of_growth = 0.500000000000000E-01
+       config_rapid_mobile_to_stationary_time = 5200.00000000000
+       config_long_mobile_to_stationary_time = 173000.000000000
+       config_algal_maximum_velocity = 0.111000000000000E-07
+       config_ratio_Fe_to_dust = 0.350000000000000E-01
+       config_solubility_of_Fe_in_dust = 0.500000000000000E-02
+       config_chla_absorptivity_of_diatoms = 0.300000000000000E-01
+       config_chla_absorptivity_of_small_plankton = 0.100000000000000E-01
+       config_chla_absorptivity_of_phaeocystis = 0.500000000000000E-01
+       config_light_attenuation_diatoms = 0.800000000000000
+       config_light_attenuation_small_plankton = 0.670000000000000
+       config_light_attenuation_phaeocystis = 0.670000000000000
+       config_light_inhibition_diatoms = 0.180000000000000E-01
+       config_light_inhibition_small_plankton = 0.250000000000000E-02
+       config_light_inhibition_phaeocystis = 0.100000000000000E-01
+       config_maximum_growth_rate_diatoms = 1.44000000000000
+       config_maximum_growth_rate_small_plankton = 0.851000000000000
+       config_maximum_growth_rate_phaeocystis = 0.851000000000000
+       config_temperature_growth_diatoms = 0.600000000000000E-01
+       config_temperature_growth_small_plankton = 0.600000000000000E-01
+       config_temperature_growth_phaeocystis = 0.600000000000000E-01
+       config_grazed_fraction_diatoms = 0.00000000000000
+       config_grazed_fraction_small_plankton = 0.100000000000000
+       config_grazed_fraction_phaeocystis = 0.100000000000000
+       config_mortality_diatoms = 0.700000000000000E-02
+       config_mortality_small_plankton = 0.700000000000000E-02
+       config_mortality_phaeocystis = 0.700000000000000E-02
+       config_temperature_mortality_diatoms = 0.300000000000000E-01
+       config_temperature_mortality_small_plankton = 0.300000000000000E-01
+       config_temperature_mortality_phaeocystis = 0.300000000000000E-01
+       config_exudation_diatoms = 0.00000000000000
+       config_exudation_small_plankton = 0.00000000000000
+       config_exudation_phaeocystis = 0.00000000000000
+       config_nitrate_saturation_diatoms = 1.00000000000000
+       config_nitrate_saturation_small_plankton = 1.00000000000000
+       config_nitrate_saturation_phaeocystis = 1.00000000000000
+       config_ammonium_saturation_diatoms = 0.300000000000000
+       config_ammonium_saturation_small_plankton = 0.300000000000000
+       config_ammonium_saturation_phaeocystis = 0.300000000000000
+       config_silicate_saturation_diatoms = 4.00000000000000
+       config_silicate_saturation_small_plankton = 0.00000000000000
+       config_silicate_saturation_phaeocystis = 0.00000000000000
+       config_iron_saturation_diatoms = 1.00000000000000
+       config_iron_saturation_small_plankton = 0.200000000000000
+       config_iron_saturation_phaeocystis = 0.100000000000000
+       config_fraction_spilled_to_DON = 0.600000000000000
+       config_degredation_of_DON = 0.300000000000000E-01
+       config_fraction_DON_ammonium = 0.250000000000000
+       config_fraction_loss_to_saccharids = 0.400000000000000
+       config_fraction_loss_to_lipids = 0.400000000000000
+       config_fraction_exudation_to_saccharids = 1.00000000000000
+       config_fraction_exudation_to_lipids = 1.00000000000000
+       config_remineralization_saccharids = 0.300000000000000E-01
+       config_remineralization_lipids = 0.300000000000000E-01
+       config_maximum_brine_temperature = 0.00000000000000
+       config_salinity_dependence_of_growth = 1.00000000000000
+       config_minimum_optical_depth = 0.100000000000000
+       config_slopped_grazing_fraction = 0.500000000000000
+       config_excreted_fraction = 0.500000000000000
+       config_fraction_mortality_to_ammonium = 0.500000000000000
+       config_fraction_iron_remineralized = 0.300000000000000
+       config_nitrification_rate = 0.00000000000000
+       config_desorption_loss_particulate_iron = 3065.00000000000
+       config_maximum_loss_fraction = 0.900000000000000
+       config_maximum_ratio_iron_to_saccharids = 0.200000000000000
+       config_respiration_loss_to_DMSPd = 0.750000000000000
+       config_DMSP_to_DMS_conversion_fraction = 0.500000000000000
+       config_DMSP_to_DMS_conversion_time = 3.00000000000000
+       config_DMS_oxidation_time = 10.0000000000000
+       config_mobility_type_diatoms = 0.00000000000000
+       config_mobility_type_small_plankton = 0.500000000000000
+       config_mobility_type_phaeocystis = 0.500000000000000
+       config_mobility_type_nitrate = -1.00000000000000
+       config_mobility_type_ammonium = 1.00000000000000
+       config_mobility_type_silicate = -1.00000000000000
+       config_mobility_type_DMSPp = 0.500000000000000
+       config_mobility_type_DMSPd = -1.00000000000000
+       config_mobility_type_humics = 1.00000000000000
+       config_mobility_type_saccharids = 0.500000000000000
+       config_mobility_type_lipids = 0.500000000000000
+       config_mobility_type_proteins = 0.500000000000000
+       config_mobility_type_dissolved_iron = 0.500000000000000
+       config_mobility_type_particulate_iron = 0.500000000000000
+       config_mobility_type_black_carbon1 = 1.00000000000000
+       config_mobility_type_black_carbon2 = 1.00000000000000
+       config_mobility_type_dust1 = 1.00000000000000
+       config_mobility_type_dust2 = 1.00000000000000
+       config_mobility_type_dust3 = 1.00000000000000
+       config_mobility_type_dust4 = 1.00000000000000
+       config_ratio_C_to_N_diatoms = 7.00000000000000
+       config_ratio_C_to_N_small_plankton = 7.00000000000000
+       config_ratio_C_to_N_phaeocystis = 7.00000000000000
+       config_ratio_chla_to_N_diatoms = 2.10000000000000
+       config_ratio_chla_to_N_small_plankton = 1.10000000000000
+       config_ratio_chla_to_N_phaeocystis = 0.840000000000000
+       config_scales_absorption_diatoms = 2.00000000000000
+       config_scales_absorption_small_plankton = 4.00000000000000
+       config_scales_absorption_phaeocystis = 5.00000000000000
+       config_ratio_C_to_N_proteins = 7.00000000000000
+       config_shortwave_type = 'dEdd'
+       config_albedo_type = 'ccsm3'
+       config_use_snicar = .true.
+       config_visible_ice_albedo = 0.780000000000000
+       config_infrared_ice_albedo = 0.360000000000000
+       config_visible_snow_albedo = 0.980000000000000
+       config_infrared_snow_albedo = 0.700000000000000
+       config_variable_albedo_thickness_limit = 0.300000000000000
+       config_ice_shortwave_tuning_parameter = 0.00000000000000
+       config_pond_shortwave_tuning_parameter = 0.00000000000000
+       config_snow_shortwave_tuning_parameter = 1.50000000000000
+       config_temp_change_snow_grain_radius_change = 1.50000000000000
+       config_max_melting_snow_grain_radius = 1500.00000000000
+       config_algae_absorption_coefficient = 0.600000000000000
+       config_snow_to_ice_transition_depth = 0.00000000000000
+       config_pond_refreezing_type = 'hlid'
+       config_pond_flushing_timescale = 0.100000000000000E-02
+       config_min_meltwater_retained_fraction = 0.150000000000000
+       config_max_meltwater_retained_fraction = 1.00000000000000
+       config_pond_depth_to_fraction_ratio = 0.800000000000000
+       config_snow_on_pond_ice_tapering_parameter = 0.300000000000000E-01
+       config_critical_pond_ice_thickness = 0.100000000000000E-01
+       config_thermodynamics_type = 'mushy'
+       config_heat_conductivity_type = 'bubbly'
+       config_rapid_mode_channel_radius = 0.500000000000000E-03
+       config_rapid_model_critical_Ra = 10.0000000000000
+       config_rapid_mode_aspect_ratio = 1.00000000000000
+       config_slow_mode_drainage_strength = -0.500000000000000E-07
+       config_slow_mode_critical_porosity = 0.500000000000000E-01
+       config_congelation_ice_porosity = 0.850000000000000
+       config_itd_conversion_type = 'linear remap'
+       config_category_bounds_type = 'original'
+       config_ice_strength_formulation = 'Rothrock75'
+       config_ridging_participation_function = 'exponential'
+       config_ridging_redistribution_function = 'exponential'
+       config_ridiging_efolding_scale = 3.00000000000000
+       config_ratio_ridging_work_to_PE = 17.0000000000000
+       config_atmos_boundary_method = 'ccsm3'
+       config_calc_surface_stresses = .true.
+       config_calc_surface_temperature = .true.
+       config_use_form_drag = .false.
+       config_use_high_frequency_coupling = .false.
+       config_boundary_layer_iteration_number = 5
+       config_use_ocean_mixed_layer = .false.
+       config_min_friction_velocity = 0.500000000000000E-03
+       config_ocean_heat_transfer_type = 'constant'
+       config_sea_freezing_temperature_type = 'mushy'
+       config_ocean_surface_type = 'free'
+       config_couple_biogeochemistry_fields = .false.
+       config_use_data_icebergs = .false.
+       config_check_state = .false.
+       config_AM_highFrequencyOutput_enable = .false.
+       config_AM_highFrequencyOutput_compute_interval = 'output_interval'
+       config_AM_highFrequencyOutput_output_stream = 'highFrequencyOutput'
+       config_AM_highFrequencyOutput_compute_on_startup = .true.
+       config_AM_highFrequencyOutput_write_on_startup = .true.
+       config_AM_temperatures_enable = .false.
+       config_AM_temperatures_compute_interval = 'dt'
+       config_AM_temperatures_output_stream = 'output'
+       config_AM_temperatures_compute_on_startup = .true.
+       config_AM_temperatures_write_on_startup = .true.
+       config_AM_regionalStatistics_enable = .true.
+       config_AM_regionalStatistics_compute_interval = '0000-00-01_00:00:00'
+       config_AM_regionalStatistics_output_stream = 'regionalStatisticsOutput'
+       config_AM_regionalStatistics_compute_on_startup = .true.
+       config_AM_regionalStatistics_write_on_startup = .true.
+       config_AM_regionalStatistics_ice_extent_limit = 0.150000000000000
+       config_AM_ridgingDiagnostics_enable = .true.
+       config_AM_ridgingDiagnostics_compute_interval = 'dt'
+       config_AM_ridgingDiagnostics_output_stream = 'output'
+       config_AM_ridgingDiagnostics_compute_on_startup = .true.
+       config_AM_ridgingDiagnostics_write_on_startup = .true.
+       config_AM_conservationCheck_enable = .false.
+       config_AM_conservationCheck_compute_interval = 'dt'
+       config_AM_conservationCheck_output_stream = 'conservationCheckOutput'
+       config_AM_conservationCheck_compute_on_startup = .true.
+       config_AM_conservationCheck_write_on_startup = .true.
+       config_AM_conservationCheck_write_to_logfile = .true.
+       config_AM_geographicalVectors_enable = .true.
+       config_AM_geographicalVectors_compute_interval = 'dt'
+       config_AM_geographicalVectors_output_stream = 'output'
+       config_AM_geographicalVectors_compute_on_startup = .true.
+       config_AM_geographicalVectors_write_on_startup = .true.
+       config_AM_loadBalance_enable = .false.
+       config_AM_loadBalance_compute_interval = 'output_interval'
+       config_AM_loadBalance_output_stream = 'loadBalanceOutput'
+       config_AM_loadBalance_compute_on_startup = .true.
+       config_AM_loadBalance_write_on_startup = .true.
+       config_AM_loadBalance_nProcs = 32
+       config_AM_maximumIcePresence_enable = .false.
+       config_AM_maximumIcePresence_compute_interval = 'dt'
+       config_AM_maximumIcePresence_output_stream = 'maximumIcePresenceOutput'
+       config_AM_maximumIcePresence_compute_on_startup = .true.
+       config_AM_maximumIcePresence_write_on_startup = .true.
+       config_AM_maximumIcePresence_start_time = '0000-00-00_00:00:00'
+       config_AM_miscellaneous_enable = .true.
+       config_AM_miscellaneous_compute_interval = 'dt'
+       config_AM_miscellaneous_output_stream = 'none'
+       config_AM_miscellaneous_compute_on_startup = .true.
+       config_AM_miscellaneous_write_on_startup = .true.
+       config_AM_areaVariables_enable = .true.
+       config_AM_areaVariables_compute_interval = 'dt'
+       config_AM_areaVariables_output_stream = 'none'
+       config_AM_areaVariables_compute_on_startup = .true.
+       config_AM_areaVariables_write_on_startup = .true.
+       config_AM_pondDiagnostics_enable = .true.
+       config_AM_pondDiagnostics_compute_interval = 'dt'
+       config_AM_pondDiagnostics_output_stream = 'none'
+       config_AM_pondDiagnostics_compute_on_startup = .true.
+       config_AM_pondDiagnostics_write_on_startup = .true.
+       config_AM_unitConversion_enable = .true.
+       config_AM_unitConversion_compute_interval = 'dt'
+       config_AM_unitConversion_output_stream = 'none'
+       config_AM_unitConversion_compute_on_startup = .false.
+       config_AM_unitConversion_write_on_startup = .false.
+       config_AM_pointwiseStats_enable = .false.
+       config_AM_pointwiseStats_compute_interval = 'dt'
+       config_AM_pointwiseStats_output_stream = 'pointwiseStatsOutput'
+       config_AM_pointwiseStats_compute_on_startup = .true.
+       config_AM_pointwiseStats_write_on_startup = .true.
+       config_AM_iceShelves_enable = .false.
+       config_AM_iceShelves_compute_interval = 'output_interval'
+       config_AM_iceShelves_output_stream = 'iceShelvesOutput'
+       config_AM_iceShelves_compute_on_startup = .true.
+       config_AM_iceShelves_write_on_startup = .true.
+       config_AM_icePresent_enable = .true.
+       config_AM_icePresent_compute_interval = 'dt'
+       config_AM_icePresent_output_stream = 'none'
+       config_AM_icePresent_compute_on_startup = .false.
+       config_AM_icePresent_write_on_startup = .false.
+       config_AM_timeSeriesStatsDaily_enable = .false.
+       config_AM_timeSeriesStatsDaily_compute_on_startup = .false.
+       config_AM_timeSeriesStatsDaily_write_on_startup = .false.
+       config_AM_timeSeriesStatsDaily_compute_interval = 'dt'
+       config_AM_timeSeriesStatsDaily_output_stream = 'timeSeriesStatsDailyOutput'
+       config_AM_timeSeriesStatsDaily_restart_stream = 'timeSeriesStatsDailyRestart'
+       config_AM_timeSeriesStatsDaily_operation = 'avg'
+       config_AM_timeSeriesStatsDaily_reference_times = 'initial_time'
+       config_AM_timeSeriesStatsDaily_duration_intervals = 'repeat_interval'
+       config_AM_timeSeriesStatsDaily_repeat_intervals = 'reset_interval'
+       config_AM_timeSeriesStatsDaily_reset_intervals = '00-00-01_00:00:00'
+       config_AM_timeSeriesStatsDaily_backward_output_offset = '00-00-01_00:00:00'
+       config_AM_timeSeriesStatsMonthly_enable = .true.
+       config_AM_timeSeriesStatsMonthly_compute_on_startup = .false.
+       config_AM_timeSeriesStatsMonthly_write_on_startup = .false.
+       config_AM_timeSeriesStatsMonthly_compute_interval = '0000-00-00_01:00:00'
+       config_AM_timeSeriesStatsMonthly_output_stream = 'timeSeriesStatsMonthlyOutput'
+       config_AM_timeSeriesStatsMonthly_restart_stream = 'none'
+       config_AM_timeSeriesStatsMonthly_operation = 'avg'
+       config_AM_timeSeriesStatsMonthly_reference_times = 'initial_time'
+       config_AM_timeSeriesStatsMonthly_duration_intervals = 'repeat_interval'
+       config_AM_timeSeriesStatsMonthly_repeat_intervals = 'reset_interval'
+       config_AM_timeSeriesStatsMonthly_reset_intervals = '00-01-00_00:00:00'
+       config_AM_timeSeriesStatsMonthly_backward_output_offset = '00-01-00_00:00:00'
+       config_AM_timeSeriesStatsClimatology_enable = .false.
+       config_AM_timeSeriesStatsClimatology_compute_on_startup = .false.
+       config_AM_timeSeriesStatsClimatology_write_on_startup = .false.
+       config_AM_timeSeriesStatsClimatology_compute_interval = '00-00-00_01:00:00'
+       config_AM_timeSeriesStatsClimatology_output_stream = 'timeSeriesStatsClimatologyOutput'
+       config_AM_timeSeriesStatsClimatology_restart_stream = 'timeSeriesStatsClimatologyRestart'
+       config_AM_timeSeriesStatsClimatology_operation = 'avg'
+       config_AM_timeSeriesStatsClimatology_reference_times = '00-01-01_00:00:00;00-04-01_00:00:00;00-07-01_00:00:00;00-10-01_00:00:00;00-03-01_00:00:00;00-06-01_00:00:00;00-09-01_00:00:00;00-12-01_00:00:00'
+       config_AM_timeSeriesStatsClimatology_duration_intervals = '00-03-00_00:00:00;00-03-00_00:00:00;00-03-00_00:00:00;00-03-00_00:00:00;00-03-00_00:00:00;00-03-00_00:00:00;00-03-00_00:00:00;00-03-00_00:00:00'
+       config_AM_timeSeriesStatsClimatology_repeat_intervals = '01-00-00_00:00:00;01-00-00_00:00:00;01-00-00_00:00:00;01-00-00_00:00:00;01-00-00_00:00:00;01-00-00_00:00:00;01-00-00_00:00:00;01-00-00_00:00:00'
+       config_AM_timeSeriesStatsClimatology_reset_intervals = '10-00-00_00:00:00;10-00-00_00:00:00;10-00-00_00:00:00;10-00-00_00:00:00;10-00-00_00:00:00;10-00-00_00:00:00;10-00-00_00:00:00;10-00-00_00:00:00'
+       config_AM_timeSeriesStatsClimatology_backward_output_offset = '00-03-00_00:00:00'
+       config_AM_timeSeriesStatsCustom_enable = .false.
+       config_AM_timeSeriesStatsCustom_compute_on_startup = .false.
+       config_AM_timeSeriesStatsCustom_write_on_startup = .false.
+       config_AM_timeSeriesStatsCustom_compute_interval = '00-00-00_01:00:00'
+       config_AM_timeSeriesStatsCustom_output_stream = 'timeSeriesStatsCustomOutput'
+       config_AM_timeSeriesStatsCustom_restart_stream = 'timeSeriesStatsCustomRestart'
+       config_AM_timeSeriesStatsCustom_operation = 'avg'
+       config_AM_timeSeriesStatsCustom_reference_times = 'initial_time'
+       config_AM_timeSeriesStatsCustom_duration_intervals = 'repeat_interval'
+       config_AM_timeSeriesStatsCustom_repeat_intervals = 'reset_interval'
+       config_AM_timeSeriesStatsCustom_reset_intervals = '00-00-07_00:00:00'
+       config_AM_timeSeriesStatsCustom_backward_output_offset = '00-00-01_00:00:00'
+ 
+  ----- done listing namelist options used -----
+ 
+WARNING: Variable xtime not in input file.
+WARNING: File /global/cscratch1/sd/cdang/acme_scratch/edison/exp.SnicarTrue.Write.cmip6-picontrol/run/mpascice.rst.0331-01-01_00000.nc does not contain a seekable xtime variable. Forcing a read of the first time record.
+WARNING: Variable landIceMask not in input file.
+WARNING: Variable xtime not in input file.
+WARNING: File /project/projectdirs/acme/inputdata/ice/mpas-cice/oEC60to30v3/seaice.EC60to30v3.restartFrom_anvil0926.171101.nc does not contain a seekable xtime variable. Forcing a read of the first time record.
+ seaice_init: Initialize sea-ice model
+  Initialize mesh...
+  Initialize column parameters...
+  Initialize coupler fields...
+  Initialize forcing...
+  Initialize velocity solver...
+  Initialize advection...
+  Initialize column variables...
+  Initialize ice state...
+  Initial halo exchanges...
+  Initialize coupler fluxes...
+ Applying ICE coupling dt (s) of: **
+ Initial time 0001-01-01_00:00:00
+ === Completed ice_init_mct ===
+ 0001-01-01_00:30:00  WC time:    1547065794.945
